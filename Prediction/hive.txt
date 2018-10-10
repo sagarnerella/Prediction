@@ -1,5 +1,0 @@
-1201 , Satish ,  25 
- 1202 , Krishna,  28 
- 1203 , amith  ,  39 
- 1204 , javed  ,  23 
- 1205 , prudvi ,  23
