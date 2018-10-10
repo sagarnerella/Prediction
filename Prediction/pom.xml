@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sureit</groupId>
+  <artifactId>Prediction</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <scala-version>2.2.2</scala-version>
+  </properties>
+
+  <dependencies>
+  
+
+
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_2.11</artifactId>
+    <version>${scala-version}</version>
+</dependency>
+
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-sql_2.11</artifactId>
+    <version>${scala-version}</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark -->
+<dependency>
+   <groupId>org.elasticsearch</groupId>
+   <artifactId>elasticsearch-spark-13_2.11</artifactId>
+   <version>6.3.1</version>
+</dependency>
+
+ <!-- https://mvnrepository.com/artifact/org.mongodb.spark/mongo-spark-connector -->
+<dependency>
+    <groupId>org.mongodb.spark</groupId>
+    <artifactId>mongo-spark-connector_2.11</artifactId>
+    <version>2.2.2</version>
+</dependency>
+<dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongo-java-driver</artifactId>
+        <version>3.6.0</version>
+    </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-hive_2.11</artifactId>
+    <version>${scala-version}</version>
+    <scope>provided</scope>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming_2.11</artifactId>
+    <version>${scala-version}</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-twitter -->
+<dependency>
+    <groupId>org.apache.bahir</groupId>
+    <artifactId>spark-streaming-twitter_2.11</artifactId>
+    <version>2.2.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
+<!-- <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-mllib_2.11</artifactId>
+    <version>2.2.2</version>
+    <scope>runtime</scope>
+</dependency>
+ -->
+ 
+ 
+
+
+
+  <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka -->
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka -->
+<!-- <dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming-kafka_2.11</artifactId>
+    <version>1.6.3</version>
+</dependency> -->
+<dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+        <version>2.1.0</version>
+        </dependency>
+        <dependency>
+	    <groupId>org.apache.kafka</groupId>
+	    <artifactId>kafka-clients</artifactId>
+	    <version>0.11.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+	
+  </dependencies>
+  
+</project>
